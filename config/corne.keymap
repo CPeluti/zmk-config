@@ -18,6 +18,18 @@
 };
 
 / {
+	behaviors {
+		hm: homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+			label = "HOMEROW_MODS";
+            		#binding-cells = <2>;
+            		tapping-term-ms = <150>;
+            		quick-tap-ms = <0>;
+            		flavor = "tap-preferred";
+            		bindings = <&kp>, <&kp>;	
+		}
+	};
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -29,9 +41,9 @@
 //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
                         bindings = <
    &trans   &kp Q	&kp W 		&kp E 		&kp R 		&kp T   &kp Y  &kp U  		&kp I     	&kp O   	&kp P    	&trans
-   &trans   &mt LGUI A	&mt LALT S 	&mt LCTRL D 	&mt LSHFT F 	&kp G   &kp H  &mt LSHFT J  	&mt LCTRL K     &mt LALT L   	&mt LGUI SEMI 	&trans
+   &trans   &hm LGUI A	&hm LALT S 	&hm LCTRL D 	&hm LSHFT F 	&kp G   &kp H  &hm LSHFT J  	&hm LCTRL K     &hm LALT L   	&hm LGUI SEMI 	&trans
    &trans   &kp Z 	&kp X 		&kp C 		&kp V 		&kp B  	&kp N  &kp M  		&kp COMMA 	&kp DOT 	&kp FSLH	&trans
-   				&lt LOWER ESC &kp SPC &kp TAB   &kp RET &lt RAISE BSPC &mt RALT DEL
+   				&lt LOWER ESC &hm SPC &kp TAB   &kp RET &lt RAISE BSPC &hm RALT DEL
                         >;
                 };
                 lower_layer {
@@ -44,7 +56,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &trans     &kp SPACE       &kp TAB      &kp RET  &trans   &mt RALT DEL
+                                    &trans     &kp SPACE       &kp TAB      &kp RET  &trans   &hm RALT DEL
                         >;
                 };
 
@@ -58,7 +70,7 @@
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp ESC &kp SPACE   &kp TAB   &kp RET   &trans    &mt RALT DEL
+                             &kp ESC &kp SPACE   &kp TAB   &kp RET   &trans    &hm RALT DEL
                         >;
                 };
         };
