@@ -32,7 +32,7 @@
    &trans   &kp Q	&kp W 		&kp E 		&kp R 		&kp T   &kp Y  &kp U  		&kp I     	&kp O   	&kp P    	&trans
    &trans   &hm_l LGUI A	&hm_l LALT S 	&hm_l LCTRL D 	&hm_shift_l LSHFT F 	&kp G   &kp H  &hm_shift_r  LSHFT J  	&hm_r LCTRL K     &hm_r LALT L   	&hm_r LGUI SEMI 	&trans
    &trans   &kp Z 	&kp X 		&kp C 		&kp V 		&kp B  	&kp N  &kp M  		&kp COMMA 	&kp DOT 	&kp FSLH	&trans
-   				&lt LOWER ESC &hm SPC &kp TAB   &kp RET &lt RAISE BSPC &hm RALT DEL
+   				&lt LOWER ESC &kp SPC &kp TAB   &kp RET &lt RAISE BSPC &hm RALT DEL
                         >;
                 };
                 lower_layer {
