@@ -117,9 +117,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESC    &kp N7        &kp N8        &kp N9        &trans        &trans          &kp NUMBER_6      &kp N7             &kp N8                &kp N9                 &kp LALT      &kp F4
-&kp LCTRL  &kp N4        &kp N5        &kp N6        &trans        &trans          &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp UP_ARROW  &none
-&kp LSHFT  &kp N1        &kp N2        &kp N3        &trans        &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LEFT               &kp DOWN      &kp RIGHT
+&kp ESC        &trans     &kp N7       &kp N8        &kp N9        &trans          &kp NUMBER_6      &kp N7             &kp N8                &kp N9                 &kp LALT      &kp F4
+&kp LCTRL      &trans     &kp N4       &kp N5        &kp N6        &trans          &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp UP_ARROW  &none
+&kp LSHFT      &trans     &kp N1       &kp N2        &kp N3        &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp LEFT               &kp DOWN      &kp RIGHT
                                        &kp N0        &trans        &mo 4           &kp RET           &mo 2              &trans
             >;
         };
