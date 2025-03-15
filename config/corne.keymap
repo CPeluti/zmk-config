@@ -22,7 +22,7 @@
 #define TAB_LEFT    &kp LG(LS(LBKT))
 #define TAB_RIGHT   &kp LG(LS(RBKT))
 #define ALFRED      &kp LA(SPACE)
-#define SCREENSHOT  &kp LG(LS(N5))
+#define SCREENSHOT  &kp LG(LS(S))
 
 #define BTClear &bt BT_CLR
 #define BT0     &bt BT_SEL 0
