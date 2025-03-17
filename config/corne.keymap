@@ -75,7 +75,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp SEMI>, <&kp RA(S)EMI>;
+            bindings = <&kp SEMI>, <&kp RA(SEMI)>;
         };
         tdI: tap_dance_I {
             compatible = "zmk,behavior-tap-dance";
@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp SQT>,<&kp RA(S)QT>;  
+            bindings = <&kp SQT>,<&kp RA(SQT)>;  
         };
         tdX: tap_dance_X {
             compatible = "zmk,behavior-tap-dance";
