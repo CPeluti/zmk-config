@@ -128,7 +128,7 @@
         compatible = "zmk,keymap";
         base_layer {
             bindings = <
-                &trans          &kp Q       &kp W       &kp tdE       &kp R       &kp T       &kp Y       &kp U       &tdI       &kp O     &kp P        &trans
+                &trans          &kp Q       &kp W       &tdE       &kp R       &kp T       &kp Y       &kp U       &tdI       &kp O     &kp P        &trans
                 &trans          &tdA       &tdS       &kp D       &kp F       &kp G       &kp H       &kp J       &tdK       &tdL     &tdSEMI     &tdSQT
                 &kp RALT       &kp Z        &tdX       &tdC       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT   &kp FSLH     &kp RALT
                                         &kp ENTER   &mo NAV     &kp SPACE   &kp LSHFT   &mo SYM     &kp LCTRL
