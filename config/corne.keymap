@@ -48,7 +48,7 @@
 };
 
 &sk {
-        quick-release;
+    quick-release;
 };
 
 / {
@@ -56,61 +56,61 @@
         tdA: tap_dance_A {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp A>, <&kp RA(A)>;
         };
         tdK: tap_dance_K {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp K>, <&kp RA(K)>;
         };
         tdL: tap_dance_L {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp L>, <&kp RA(L)>;
         };
         tdSEMI: tap_dance_SEMI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp SEMI>, <&kp RA(SEMI)>;
         };
         tdI: tap_dance_I {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp I>, <&kp RA(I)>;
         };
         tdC: tap_dance_C {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp C>, <&kp RA(C)>;
         };
         tdE: tap_dance_E {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp E>, <&kp RA(E)>;
         };
         tdSQT: tap_dance_SQT {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp SQT>,<&kp RA(SQT)>;  
         };
         tdX: tap_dance_X {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp X>, <&kp RA(X)>;
         };
         tdS: tap_dance_S {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <TAPPING_TERM>;
             bindings = <&kp S>, <&kp RA(S)>;
         };
     };
