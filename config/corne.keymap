@@ -139,13 +139,13 @@
         tdA: tap_dance_A {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp A>, <&kp RA(A)>;
         };
         tdK: tap_dance_K {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp K>, <&kp RA(K)>;
         };
         tdL: tap_dance_L {
@@ -157,7 +157,7 @@
         tdSEMI: tap_dance_SEMI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp SEMI>, <&kp RA(SEMI)>;
         };
         tdI: tap_dance_I {
