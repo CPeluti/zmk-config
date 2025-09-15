@@ -139,61 +139,61 @@
         tdA: tap_dance_A {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp A>, <&kp RA(A)>;
         };
         tdK: tap_dance_K {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp K>, <&kp RA(K)>;
         };
         tdL: tap_dance_L {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp L>, <&kp RA(L)>;
         };
         tdSEMI: tap_dance_SEMI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp SEMI>, <&kp RA(SEMI)>;
         };
         tdI: tap_dance_I {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp I>, <&kp RA(I)>;
         };
         tdC: tap_dance_C {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp C>, <&kp RA(C)>;
         };
         tdE: tap_dance_E {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp E>, <&kp RA(E)>;
         };
         tdSQT: tap_dance_SQT {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp SQT>,<&kp RA(SQT)>;  
         };
         tdX: tap_dance_X {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp X>, <&kp RA(X)>;
         };
         tdS: tap_dance_S {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <TAPPING_TERM>;
+            tapping-term-ms = <150>;
             bindings = <&kp S>, <&kp RA(S)>;
         };
     };
@@ -212,7 +212,7 @@
         base_layer {
             bindings = <
                 &kp TAB         &kp Q       &kp W      &tdE       &kp R       &kp T             &kp Y       &kp U       &tdI       &kp O     &kp P        &kp BSPC
-                &mt ESC LSHFT   &tdA        &tdS       &kp D      &kp F       &kp G             &kp H       &kp J       &tdK       &tdL      &tdSEMI      &tdSQT
+                &mt LSHFT ESC   &tdA        &tdS       &kp D      &kp F       &kp G             &kp H       &kp J       &tdK       &tdL      &tdSEMI      &tdSQT
                 &kp LCTRL       &kp Z       &tdX       &tdC       &kp V       &kp B             &kp N       &kp M       &kp COMMA  &kp DOT   &kp FSLH     &kp UNDER
                                                     &kp LGUI   &lt NAV SPACE  &kp LALT          &mo ADJ   &lt SYM ENTER     &kp LCTRL
             >;
@@ -221,7 +221,7 @@
         nav_layer {
             bindings = <
             &trans  &kp TAB   &none     SPACE_LEFT  SPACE_RIGHT ALFRED      &none     &kp HOME  &kp END   &kp BSPC  &kp DEL     &trans
-            &trans  &sk LSHFT &sk LCTRL &sk LALT    &sk LCMD    MEH         &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT   &trans
+            &trans  &sk LSHFT &sk LCTRL &sk LALT    &sk LCMD    MEH         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none        &trans
             &trans  &none     &none     TAB_LEFT    TAB_RIGHT   HYPER       &none     &none     &kp PG_DN &kp PG_UP &none       &trans
                                 &trans      &trans      &trans      &trans    &trans    &trans
                 >;
