@@ -214,7 +214,7 @@
                 &kp TAB         &kp Q       &kp W      &tdE       &kp R       &kp T             &kp Y       &kp U       &tdI       &kp O     &kp P        &kp BSPC
                 &mt ESC LSHFT   &tdA        &tdS       &kp D      &kp F       &kp G             &kp H       &kp J       &tdK       &tdL      &tdSEMI      &tdSQT
                 &kp LCTRL       &kp Z       &tdX       &tdC       &kp V       &kp B             &kp N       &kp M       &kp COMMA  &kp DOT   &kp FSLH     &kp UNDER
-                                                    &kp LGUI   &lt NAV SPACE  &kp LALT          &kp LSHFT   &lt SYM ENTER     &kp LCTRL
+                                                    &kp LGUI   &lt NAV SPACE  &kp LALT          &mo ADJ   &lt SYM ENTER     &kp LCTRL
             >;
         };
 
@@ -247,7 +247,7 @@
 
         adj_layer {
             bindings = <
-                &trans  &none     &none     &none     &none           BTClear         &kp C_VOLUME_UP   &kp C_NEXT         &none       &none     &none      &trans
+                &trans  &none     &none     &none     &none           &bootloader         &bootloader   &kp C_NEXT         &none       &none     &none      &trans
                 &trans  BT4       BT3       BT2       BT1             BT0             &kp C_VOLUME_DOWN &kp C_PREVIOUS     SCREENSHOT  &none     &none      &trans
                 &trans  &none     &none     &none     &bootloader     &none           &kp C_MUTE        &kp C_PLAY_PAUSE   &none       &none     &trans     &trans
                                     &trans    &trans          &trans          &trans            &trans          &trans      
