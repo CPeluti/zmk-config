@@ -172,7 +172,7 @@ jobs:
       - name: Archive (${{ env.display_name }})
         uses: actions/upload-artifact@v4
         with:
-          name: artifact-${{ env.artifact_name }}
+          name: artifact-${{ env.artifact_name }}-${{inputs.layout}}
           path: ${{ env.build_dir }}/artifacts
 
   merge:
@@ -183,6 +183,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@v4
         with:
-          name: ${{ inputs.archive_name }}
+          name: ${{ inputs.archive_name }}-${{inputs.layout}}
           pattern: artifact-*
           delete-merged: true
