@@ -6,8 +6,10 @@ jobs:
     secrets: inherit
     with:
       layout: 'COLEMAK_DH'
+      archive_name: 'colemak_dh_firmware'
   build_colemak:
     uses: ./.github/workflows/build.yml
     secrets: inherit
     with:
       layout: 'COLEMAK'
+      archive_name: 'colemak_firmware'
