@@ -1,0 +1,18 @@
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  prepare-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout config
+        uses: actions/checkout@v4
+
+      - name: Add temporary define
+        run: |
+          FILE="config/corne.keymap"
+          echo "#define COLEMAK" | cat - "$FILE" > temp && mv temp "$FILE"
+
+      - name: Call ZMK build workflow
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
