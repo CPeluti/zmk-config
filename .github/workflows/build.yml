@@ -183,6 +183,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@v4
         with:
-          name: ${{inputs.layout}}-${{ inputs.archive_name }}
+          name: ${{ inputs.archive_name }}
           pattern: artifact-${{inputs.layout}}-*
           delete-merged: true
