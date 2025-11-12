@@ -2,6 +2,11 @@ name: Build ZMK firmware
 on:
   workflow_call:
     inputs:
+      layout:
+        description: "default layer alphas layout"
+        default: "COLEMAK_DH"
+        required: false
+        type: string
       build_matrix_path:
         description: "Path to the build matrix file"
         default: "build.yaml"
@@ -54,7 +59,7 @@ jobs:
       - name: Add temporary define
         run: |
           FILE="config/corne.keymap"
-          echo "#define COLEMAK" | cat - "$FILE" > temp && mv temp "$FILE"
+          echo "#define ${{inputs.layout}}" | cat - "$FILE" > temp && mv temp "$FILE"
 
       - name: Create build directory
         run: |

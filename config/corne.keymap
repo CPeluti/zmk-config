@@ -56,7 +56,8 @@ ZMK_LAYER(default_layer,
                                                       &lt MEDIA ESC &lt NAV SPACE &kp TAB           &lt SYM RET   &lt NUM BSPC  &lt FUN DEL
         //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
-#else
+#endif
+#ifdef COLEMAK_DH
 ZMK_LAYER(default_layer,
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
             ___           &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT       &to GAME

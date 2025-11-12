@@ -1,0 +1,8 @@
+name: 'Corne Build'
+on: push
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      layout: 'COLEMAK_DH'
