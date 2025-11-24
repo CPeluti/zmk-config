@@ -43,7 +43,7 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
 )
-#ifdef COLEMAK
+#ifdef QWERTY
 ZMK_LAYER(default_layer,
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
             ___           &kp Q         &kp W         &kp E         &kp T         &kp Y             &kp Y         &kp U         &kp I         &kp O         &kp P         &to GAME

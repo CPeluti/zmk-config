@@ -13,3 +13,9 @@ jobs:
     with:
       layout: 'COLEMAK'
       archive_name: 'colemak_firmware'
+  build_qwerty:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+    with:
+      layout: 'QWERTY'
+      archive_name: 'qwerty_firmware'
