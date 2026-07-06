@@ -14,13 +14,11 @@
 
   
 #define DEF 0
-#define NAV 1
-#define MEDIA 2
-#define NUM 3
-#define SYM 4
-#define FUN 5
-#define GAME 6
-#define GAMENUM 7
+#define SYM 1
+#define NAV 2
+#define ADJUST 3
+#define GAME 4
+
 
 
 #define NUMROW LN0 LN1 LN2 LN3 LN4 LN5 RN0 RN1 RN2 RN3 RN4 RN5
